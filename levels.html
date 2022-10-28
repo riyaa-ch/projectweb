@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVELS</title>
+    
+
+    <style>
+        body{
+        background-image: url('back2.jpg');
+        animation: color 10s infinite linear;
+        padding: 2em;
+    }
+
+    @keyframes color {
+        0% {background-image: url('back2.jpg');}
+        20% {background-image: url('back3.jpg');}
+        40% {background-image: url('back4.jpeg');}
+        60% {background-image: url('back5.jpg');}
+        80% {background-image: url('back6.jpg');}
+        100% {background-image: url('back7.jpg');}
+    }
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  position: relative;
+  height: 15vh;
+  width: 20vw;
+  margin-top: 7vw;
+  border-radius: 5vw;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+  text-transform:bold;
+}
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  color: black;
+}
+button:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+  color: black;
+}
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}    
+p{
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <p>
+
+     
+        <b><center><button class="button" bgcolor="green" onclick="window.location.href = 'easy.html';">EASY</button></center></b>
+
+
+
+    </p>
+    <p>
+    
+    
+        <b><center><button class="button" bgcolor="green" onclick="window.location.href = 'medium.html';"> MEDIUM</button></center></b>
+
+
+        </p>
+        <p>
+
+
+
+    <b><center><button class="button" bgcolor="green" onclick="window.location.href = 'hard.html';"> HARD</button></center></b>
+
+
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

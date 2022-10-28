@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HARD</title>
+    <style>
+      body{
+        background-image: url('back2.jpg');
+        animation: color 10s infinite linear;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 5%;
+    }
+    @keyframes color {
+        0% {background-image: url('back2.jpg');}
+        20% {background-image: url('back3.jpg');}
+        40% {background-image: url('back4.jpeg');}
+        60% {background-image: url('back5.jpg');}
+        80% {background-image: url('back6.jpg');}
+        100% {background-image: url('back7.jpg');}
+    }
+
+    .grid-container {
+        width: 60vw;
+        height: 90vh;
+        background-color:black;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 3vw;
+        border-image-slice: 1;
+        border-color: black;
+    }
+    
+    
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 60vw;
+        height: 60vh;
+        padding-top: 40px;
+    }
+    
+.row-index,
+.col-index {
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.row-index {
+    left: 13%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60px;
+}
+
+.col-index {
+    top: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.row-index>div,
+.col-index>div {
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.row-index,
+.col-index {
+    position: absolute;
+    font-size: 2.5rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.row-index {
+    left: 2%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+}
+
+.col-index {
+    top: 0.0%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.row-index>div,
+.col-index>div {
+    text-align: center;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+      
+      .parent {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(6, 7.3vw);
+        grid-template-rows: repeat(6, 11vh);
+        padding-top: 10px;
+      }
+      .parent > div {
+        padding: 1px;
+        background-image: url('pink.jpg');
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        color: white;
+      }
+
+      .parent > div {
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .parent > div >img{
+        width: 7.3vw;
+        height: 11vh;
+        display: none;
+      }
+      .message-Container{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.237);
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .message{
+        width: 35vw;
+        height: 50vh;
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        background-image: url('back7.jpg');
+        font-size: 4em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;   
+        color: white; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+        
+        <div class="row-index">
+            <div>👉</div>
+            <div>👉</div>
+            <div>👉</div>
+            <div>👉</div>
+            <div>👉</div>
+            <div>👉</div>
+        </div>
+        <div class="col-index">
+            <div>👇</div>
+            <div>👇</div>
+            <div>👇</div>
+            <div>👇</div>
+            <div>👇</div>
+            <div>👇</div>
+        </div>
+    <div class="boxes x1"></div>
+      <div class="boxes x2"></div>
+      <div class="boxes x3"></div>
+      <div class="boxes x4"></div>
+      <div class="boxes x5"></div>
+      <div class="boxes x6"></div>
+      <div class="boxes x7"></div>
+      <div class="boxes x8"></div>
+      <div class="boxes x9"></div>
+    <div class="parent">
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./warning.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./warning.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./warning.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./gift.png" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./warning.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./wrong.jpg" alt="">
+      </div>
+      <div>
+        <span>Click💭</span>
+        <img src="./warning.jpg" alt="">
+      </div>
+      
+    </div>
+    <div class="message-Container">
+      <div class="message">test</div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
